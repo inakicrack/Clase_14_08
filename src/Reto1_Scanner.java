@@ -19,9 +19,12 @@ public class Reto1_Scanner {
 			Pregunta preg = listaDePreg[i];
 			
 			System.out.println(preg.pregunta);
-			String respuestaDelUsuario = leerLinea.nextLine().trim();
-			if (preg.respuestaCorrecta.equals(respuestaDelUsuario.toUpperCase())) {
-				System.out.println("Yes, playa!");
+			
+			String rUsuario = leerLinea.nextLine().trim().toUpperCase();
+			String rCorrecta = preg.respuestaCorrecta.toUpperCase();
+			
+			if (rCorrecta.equals(rUsuario)) {
+				System.out.println("\nYes, playa!\n");
 			}else {
 				System.out.println("\nNo lo tienes my claro...\n");	
 			}
