@@ -15,9 +15,14 @@ public class Reto1_Scanner {
 		Scanner leerLinea = new Scanner(System.in);
 		boolean esCorrecta = true;
 		
-		
-		for(int i = 0, i < listaDePreg.length, i++) {
-			
+		for(int i = 0; i < listaDePreg.length; i++) {
+			System.out.println(i.pregunta);
+			String respuestaDelUsuario = leerLinea.nextLine().trim();
+			if (i.respuestaCorrecta.equals(respuestaDelUsuario.toUpperCase())) {
+				System.out.println("Yes, playa!");
+			}else {
+				System.out.println("\nNo lo tienes my claro...\n");	
+			}
 		}
 /*
 		while (esCorrecta) {
