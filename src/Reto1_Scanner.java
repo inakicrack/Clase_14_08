@@ -3,14 +3,28 @@ import java.util.Scanner;
 public class Reto1_Scanner {
 
 	public static void main(String[] args) {
-		Pregunta reto1 = new Pregunta ("¿Voy a aprobar el año que viene?", "SI");
+		
+		Pregunta preg1 = new Pregunta ("¿Voy a aprobar el año que viene?", "SI");
+		Pregunta preg2 = new Pregunta ("¿Va a ser difícil el año que viene?", "NO");
+		Pregunta preg3 = new Pregunta ("¿Vamos a por todas?", "SI");
+		Pregunta listaDePreg[] = new Pregunta [3];
+		listaDePreg[0] = preg1;
+		listaDePreg[1] = preg2;	
+		listaDePreg[2] = preg3;
+		
 		Scanner leerLinea = new Scanner(System.in);
 		boolean esCorrecta = true;
 		
+		
+		for(int i = 0, i < listaDePreg.length, i++) {
+			
+		}
+/*
 		while (esCorrecta) {
-			System.out.println(reto1.pregunta);
+
+			System.out.println(preg1.pregunta);
 			String respuestaDelUsuario = leerLinea.nextLine().trim();
-			if (reto1.respuestaCorrecta.equals(respuestaDelUsuario.toUpperCase())) {
+			if (preg1.respuestaCorrecta.equals(respuestaDelUsuario.toUpperCase())) {
 				esCorrecta = false;
 				System.out.println("Yes, playa!");
 			}else {
@@ -18,5 +32,7 @@ public class Reto1_Scanner {
 			}
 		}
 		leerLinea.close();
+
+ */	
 	}
 }
