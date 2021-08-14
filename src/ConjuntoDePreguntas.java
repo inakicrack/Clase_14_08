@@ -11,6 +11,10 @@ public class ConjuntoDePreguntas {
 		this.crearConjuntoDePreguntas();
 	}
 	
+	ConjuntoDePreguntas(Pregunta unta){
+		
+	}
+	
 	public void crearConjuntoDePreguntas() {
 		Pregunta preg1 = new Pregunta ("¿Voy a aprobar el año que viene?", "SI");
 		Pregunta preg2 = new Pregunta ("¿Va a ser difícil el año que viene?", "NO");

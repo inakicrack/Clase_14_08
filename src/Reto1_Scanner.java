@@ -14,7 +14,6 @@ public class Reto1_Scanner {
 */		
 		ConjuntoDePreguntas proxCDP = new ConjuntoDePreguntas(null);
 		Scanner leerLinea = new Scanner(System.in);
-		proxCDP.crearConjuntoDePreguntas();
 		
 		for(int i = 0; i < proxCDP.listaDePreg.length; i++) {
 			Pregunta preg = proxCDP.listaDePreg[i];
