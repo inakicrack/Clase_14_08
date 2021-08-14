@@ -13,7 +13,6 @@ public class Reto1_Scanner {
 		listaDePreg[2] = preg3;
 		
 		Scanner leerLinea = new Scanner(System.in);
-		boolean esCorrecta = true;
 		
 		for(int i = 0; i < listaDePreg.length; i++) {
 			Pregunta preg = listaDePreg[i];
@@ -29,6 +28,7 @@ public class Reto1_Scanner {
 				System.out.println("\nNo lo tienes my claro...\n");	
 			}
 		}
+		leerLinea.close();
 /*
 		while (esCorrecta) {
 
