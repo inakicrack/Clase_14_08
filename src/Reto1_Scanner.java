@@ -12,12 +12,12 @@ public class Reto1_Scanner {
 		listaDePreg[1] = preg2;	
 		listaDePreg[2] = preg3;
 */		
-		ConjuntoDePreguntas proxCurso = new ConjuntoDePreguntas(null);
-		
+		ConjuntoDePreguntas proxCDP = new ConjuntoDePreguntas(null);
 		Scanner leerLinea = new Scanner(System.in);
+		proxCDP.crearConjuntoDePreguntas();
 		
-		for(int i = 0; i < listaDePreg.length; i++) {
-			Pregunta preg = listaDePreg[i];
+		for(int i = 0; i < proxCDP.listaDePreg.length; i++) {
+			Pregunta preg = proxCDP.listaDePreg[i];
 			
 			System.out.println(preg.pregunta);
 			
