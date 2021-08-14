@@ -12,7 +12,7 @@ public class Reto1_Scanner {
 		listaDePreg[1] = preg2;	
 		listaDePreg[2] = preg3;
 */		
-		Concurso proxCurso = new Concurso(null);
+		ConjuntoDePreguntas proxCurso = new ConjuntoDePreguntas(null);
 		
 		Scanner leerLinea = new Scanner(System.in);
 		
