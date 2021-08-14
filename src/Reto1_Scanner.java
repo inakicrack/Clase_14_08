@@ -14,9 +14,9 @@ public class Reto1_Scanner {
 				esCorrecta = false;
 				System.out.println("Yes, playa!");
 			}else {
-				System.out.println("Quiero que lo repitas hasta que la respuesta sea correcta");	
+				System.out.println("\nQuiero que lo repitas hasta que la respuesta sea correcta\n");	
 			}
-		}	
+		}
+		leerLinea.close();
 	}
-	
 }
