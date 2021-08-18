@@ -12,7 +12,7 @@ public class Reto1_Scanner {
 		listaDePreg[1] = preg2;	
 		listaDePreg[2] = preg3;
 */		
-		ConjuntoDePreguntas proxCDP = new ConjuntoDePreguntas(null);
+		ConjuntoDePreguntas proxCDP = new ConjuntoDePreguntas();
 		Scanner leerLinea = new Scanner(System.in);
 		
 		for(int i = 0; i < proxCDP.listaDePreg.length; i++) {

@@ -9,4 +9,10 @@ public class Pregunta {
 		this.respuestaCorrecta = res;
 	}
 	
+	/*public void crearPregunta(Pregunta nuevaP, String nuevaPreg, String nuevaRes) {
+		
+		this.pregunta = nuevaPreg;
+		this.respuestaCorrecta = nuevaRes;
+	}
+	*/
 }
