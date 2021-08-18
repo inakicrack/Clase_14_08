@@ -14,13 +14,12 @@ public class ConjuntoDePreguntas {
 	static final int MAX_PREGUNTAS = 3;
 	int posicion_de_nueva_pregunta_a_insertar;
 	
-	ConjuntoDePreguntas(Pregunta lDP[]){
-		this.lista_de_preg = lDP;
-		this.posicion_de_nueva_pregunta_a_insertar = 0;
-	}
-	
 	ConjuntoDePreguntas(){
-		this.lista_de_preg.length < MAX_PREGUNTAS;
+		this.posicion_de_nueva_pregunta_a_insertar = 0;
+		this.lista_de_preg = new Pregunta[ConjuntoDePreguntas.MAX_PREGUNTAS];
+		for(int i = 0; i < this.lista_de_preg.length; i++ ) {
+			this.lista_de_preg[i] = null;
+		}
 	}
 
 
