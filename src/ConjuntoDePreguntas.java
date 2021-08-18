@@ -65,7 +65,7 @@ public class ConjuntoDePreguntas {
 	}
 	
 	public void añadirPregunta(Pregunta nuevaPreg) {
-		if(this.posicionDeNuevaPreguntaAInsertar == this.MAX_PREGUNTAS) {
+		if(this.posicionDeNuevaPreguntaAInsertar == MAX_PREGUNTAS) {
 			throw new ArrayEstaLlenoException("El array está lleno");
 		}else {
 			this.listaDePreg[this.posicionDeNuevaPreguntaAInsertar] = nuevaPreg;
