@@ -1,11 +1,22 @@
+//Autor: Iñaki
+//Fecha: 14/08/2021
+/*
+	Clase que nos sirve para crear listas de preguntas junto a sus métodos para que pueda leerse el solo con scanner,
+	 añadir preguntas, comprobar que el array tiene espacio, etc.
+*/
+
 import java.util.Scanner;
+import MisExcepciones.ArrayEstaLlenoException;
 
 public class ConjuntoDePreguntas {
 
 	public Pregunta listaDePreg[];
+	static final int MAX_PREGUNTAS = 3;
+	int posicionDeNuevaPreguntaAInsertar;
 	
 	ConjuntoDePreguntas(Pregunta lDP[]){
 		this.listaDePreg = lDP;
+		this.posicionDeNuevaPreguntaAInsertar = 0;
 	}
 	
 	ConjuntoDePreguntas(){
@@ -53,4 +64,11 @@ public class ConjuntoDePreguntas {
 		leerLinea.close();
 	}
 	
+	public void añadirPregunta(Pregunta nuevaPreg) {
+		if(this.posicionDeNuevaPreguntaAInsertar == this.MAX_PREGUNTAS) {
+			throw new ArrayEstaLlenoException("El array está lleno");
+		}else {
+			this.listaDePreg[this.posicionDeNuevaPreguntaAInsertar] = nuevaPreg;
+		}		
+	}	
 }

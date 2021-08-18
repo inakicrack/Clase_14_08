@@ -1,3 +1,6 @@
+//Autor: Iñaki
+//Fecha: 14/08/2021
+//Clase que nos sirve para hacer preguntas junto a sus respuestas correctas.
 
 public class Pregunta {
 
@@ -8,11 +11,4 @@ public class Pregunta {
 		this.pregunta = preg;
 		this.respuestaCorrecta = res;
 	}
-	
-	/*public void crearPregunta(Pregunta nuevaP, String nuevaPreg, String nuevaRes) {
-		
-		this.pregunta = nuevaPreg;
-		this.respuestaCorrecta = nuevaRes;
-	}
-	*/
 }
