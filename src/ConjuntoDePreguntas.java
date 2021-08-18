@@ -23,17 +23,34 @@ public class ConjuntoDePreguntas {
 	}
 
 	public void preguntar() {
+		
+		// como en el bloque else del if casi he copiado el bloque de abajo comentado
 		boolean continuar = true;
 		int indice = 0;
-		Scanner leerLinea = new Scanner(System.in);
+		Scanner leer_linea = new Scanner(System.in);
 		
 		while(continuar) {
-			if(this.lista_de_preg[indice] != null) {
-				continuar == false;
+			if(this.lista_de_preg[indice] == null) { //Cambie "!=" por "==" pq debe parar cuando encuentra el primer null. o sea == null.
+				continuar = false; //Quite el == pq es una asigancion, no una comparacion
 			}else {
+				Pregunta preg = this.lista_de_preg[indice]; //Cambie "i" por "indice"
 				
+				System.out.println(preg.pregunta);
+				
+				String rUsuario = leer_linea.nextLine().trim().toUpperCase();
+				String rCorrecta = preg.respuesta_correcta.toUpperCase();
+				
+				if (rCorrecta.equals(rUsuario)) {
+					System.out.println("\nYes, playa!\n");
+				}else {
+					System.out.println("\nNo lo tienes muy claro...\n");	
+				}			
 			}
+			indice ++; // Es el equivalente al i++ del for
 		}
+		leer_linea.close();
+		
+		
 /*		for(int i = 0; i < this.lista_de_preg.length; i++) {
 			Pregunta preg = this.lista_de_preg[i];
 			
