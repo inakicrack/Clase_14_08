@@ -47,7 +47,7 @@ public class ConjuntoDePreguntas {
 			if (rCorrecta.equals(rUsuario)) {
 				System.out.println("\nYes, playa!\n");
 			}else {
-				System.out.println("\nNo lo tienes my claro...\n");	
+				System.out.println("\nNo lo tienes muy claro...\n");	
 			}
 		}
 		leerLinea.close();
