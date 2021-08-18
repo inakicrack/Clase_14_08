@@ -27,6 +27,7 @@ public class ConjuntoDePreguntas {
 		// como en el bloque else del if casi he copiado el bloque de abajo comentado
 		boolean continuar = true;
 		int indice = 0;
+		@SuppressWarnings("resource")
 		Scanner leer_linea = new Scanner(System.in);
 		
 		while(continuar) {
@@ -35,13 +36,21 @@ public class ConjuntoDePreguntas {
 					continuar = false; //Quite el == pq es una asigancion, no una comparacion
 				}else {
 					Pregunta preg = this.lista_de_preg[indice]; //Cambie "i" por "indice"
-					
+	
 					System.out.println(preg.pregunta);
 					
-					String rUsuario = leer_linea.nextLine().trim().toUpperCase();
-					String rCorrecta = preg.respuesta_correcta.toUpperCase();
+					String r_usuario = "";
+					try {
+						r_usuario = leer_linea.nextLine();
+					} catch (Exception e) {
+						System.out.println("HA PETADO EL SCANNER;  aver si nos dejas seguir...");
+						System.out.println(e.getMessage());
+					}
 					
-					if (rCorrecta.equals(rUsuario)) {
+					r_usuario = r_usuario.trim().toUpperCase();
+					String r_correcta = preg.respuesta_correcta.toUpperCase();
+					
+					if (r_correcta.equals(r_usuario)) {
 						System.out.println("\nYes, playa!\n");
 					}else {
 						System.out.println("\nNo lo tienes muy claro...\n");	
@@ -52,7 +61,7 @@ public class ConjuntoDePreguntas {
 				continuar = false;
 			}
 		}
-		leer_linea.close();
+		//leer_linea.close();
 	}
 	
 	public void anadirPregunta(Pregunta nuevaPreg) {
