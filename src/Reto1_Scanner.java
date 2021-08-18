@@ -23,20 +23,10 @@ public class Reto1_Scanner {
 		ConjuntoDePreguntas c_d_p3 = new ConjuntoDePreguntas();
 		nuevaPreg = new Pregunta("¿Hace calor?", "SI");
 		c_d_p3.anadirPregunta(nuevaPreg);
-/*
-		while (esCorrecta) {
 
-			System.out.println(preg1.pregunta);
-			String respuestaDelUsuario = leerLinea.nextLine().trim();
-			if (preg1.respuestaCorrecta.equals(respuestaDelUsuario.toUpperCase())) {
-				esCorrecta = false;
-				System.out.println("Yes, playa!");
-			}else {
-				System.out.println("\nQuiero que lo repitas hasta que la respuesta sea correcta\n");	
-			}
-		}
-		leerLinea.close();
-
- */	
+		c_d_p1.preguntar();
+		c_d_p2.preguntar();
+		c_d_p3.preguntar();
+		
 	}
 }

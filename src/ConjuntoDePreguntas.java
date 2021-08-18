@@ -49,24 +49,6 @@ public class ConjuntoDePreguntas {
 			indice ++; // Es el equivalente al i++ del for
 		}
 		leer_linea.close();
-		
-		
-/*		for(int i = 0; i < this.lista_de_preg.length; i++) {
-			Pregunta preg = this.lista_de_preg[i];
-			
-			System.out.println(preg.pregunta);
-			
-			String rUsuario = leerLinea.nextLine().trim().toUpperCase();
-			String rCorrecta = preg.respuesta_correcta.toUpperCase();
-			
-			if (rCorrecta.equals(rUsuario)) {
-				System.out.println("\nYes, playa!\n");
-			}else {
-				System.out.println("\nNo lo tienes muy claro...\n");	
-			}
-		}
-		leerLinea.close();
-*/
 	}
 	
 	public void anadirPregunta(Pregunta nuevaPreg) {
