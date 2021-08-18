@@ -4,10 +4,10 @@
 
 public class BaseDeDatosDePreguntas {
 	
-	public ConjuntoDePreguntas conjuntoDP[];
+	public ConjuntoDePreguntas conjunto_d_p[];
 	
-	BaseDeDatosDePreguntas(ConjuntoDePreguntas cDP[]){
-		this.conjuntoDP = cDP;
+	BaseDeDatosDePreguntas(ConjuntoDePreguntas c_d_p[]){
+		this.conjunto_d_p = c_d_p;
 	}
 	
 	public void crearBaseDeDatosDePreguntas() {

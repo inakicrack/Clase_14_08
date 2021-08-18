@@ -5,10 +5,10 @@
 public class Pregunta {
 
 	public final String pregunta;
-	public final String respuestaCorrecta;
+	public final String respuesta_correcta;
 	
 	Pregunta(String preg, String res){
 		this.pregunta = preg;
-		this.respuestaCorrecta = res;
+		this.respuesta_correcta = res;
 	}
 }
