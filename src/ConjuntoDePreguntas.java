@@ -19,29 +19,8 @@ public class ConjuntoDePreguntas {
 		this.posicionDeNuevaPreguntaAInsertar = 0;
 	}
 	
-	ConjuntoDePreguntas(){
-		this.crearConjuntoDePreguntas();
-	}
-	
-	/*
-	 Pregunta preg1 = new Pregunta ("¿Voy a aprobar el año que viene?", "SI");
-		Pregunta preg2 = new Pregunta ("¿Va a ser difícil el año que viene?", "NO");
-		Pregunta preg3 = new Pregunta ("¿Vamos a por todas?", "SI");
-		this.listaDePreg = new Pregunta [3];
-		this.listaDePreg[0] = preg1;
-		this.listaDePreg[1] = preg2;	
-		this.listaDePreg[2] = preg3;
-	 */
-	
-	public void crearConjuntoDePreguntas() {
-		 Pregunta preg1 = new Pregunta ("¿Voy a aprobar el año que viene?", "SI");
-			Pregunta preg2 = new Pregunta ("¿Va a ser difícil el año que viene?", "NO");
-			Pregunta preg3 = new Pregunta ("¿Vamos a por todas?", "SI");
-			this.listaDePreg = new Pregunta [3];
-			this.listaDePreg[0] = preg1;
-			this.listaDePreg[1] = preg2;	
-			this.listaDePreg[2] = preg3;
-	}
+
+
 	
 	public void preguntar() {
 		
@@ -64,7 +43,7 @@ public class ConjuntoDePreguntas {
 		leerLinea.close();
 	}
 	
-	public void añadirPregunta(Pregunta nuevaPreg) {
+	public void anadirPregunta(Pregunta nuevaPreg) {
 		if(this.posicionDeNuevaPreguntaAInsertar == MAX_PREGUNTAS) {
 			throw new ArrayEstaLlenoException("El array está lleno");
 		}else {

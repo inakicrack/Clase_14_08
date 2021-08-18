@@ -7,7 +7,7 @@ public class Reto1_Scanner {
 
 	public static void main(String[] args) {	
 		ConjuntoDePreguntas proxCDP = new ConjuntoDePreguntas();
-		proxCDP.preguntar();
+		proxCDP.anadirPregunta("¿Voy a aprobar el año que viene?", "SI");
 /*
 		while (esCorrecta) {
 
@@ -25,3 +25,11 @@ public class Reto1_Scanner {
  */	
 	}
 }
+/*Pregunta preg1 = new Pregunta ("¿Voy a aprobar el año que viene?", "SI");
+Pregunta preg2 = new Pregunta ("¿Va a ser difícil el año que viene?", "NO");
+Pregunta preg3 = new Pregunta ("¿Vamos a por todas?", "SI");
+this.listaDePreg = new Pregunta [3];
+this.listaDePreg[0] = preg1;
+this.listaDePreg[1] = preg2;	
+this.listaDePreg[2] = preg3;
+*/
