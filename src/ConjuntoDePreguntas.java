@@ -48,6 +48,7 @@ public class ConjuntoDePreguntas {
 			throw new ArrayEstaLlenoException("El array está lleno");
 		}else {
 			this.listaDePreg[this.posicionDeNuevaPreguntaAInsertar] = nuevaPreg;
+			this.posicionDeNuevaPreguntaAInsertar++;
 		}		
 	}	
 }
