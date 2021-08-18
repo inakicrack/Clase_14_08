@@ -22,13 +22,19 @@ public class ConjuntoDePreguntas {
 		}
 	}
 
-
-	
 	public void preguntar() {
-		
+		boolean continuar = true;
+		int indice = 0;
 		Scanner leerLinea = new Scanner(System.in);
 		
-		for(int i = 0; i < this.lista_de_preg.length; i++) {
+		while(continuar) {
+			if(this.lista_de_preg[indice] != null) {
+				continuar == false;
+			}else {
+				
+			}
+		}
+/*		for(int i = 0; i < this.lista_de_preg.length; i++) {
 			Pregunta preg = this.lista_de_preg[i];
 			
 			System.out.println(preg.pregunta);
@@ -43,6 +49,7 @@ public class ConjuntoDePreguntas {
 			}
 		}
 		leerLinea.close();
+*/
 	}
 	
 	public void anadirPregunta(Pregunta nuevaPreg) {

@@ -6,13 +6,23 @@
 public class Reto1_Scanner {
 
 	public static void main(String[] args) {	
-		ConjuntoDePreguntas cDP1 = new ConjuntoDePreguntas();
+		ConjuntoDePreguntas c_d_p1 = new ConjuntoDePreguntas();
 		Pregunta nuevaPreg = new Pregunta("¿Voy a aprobar el año que viene?", "SI");
-		cDP1.anadirPregunta(nuevaPreg);
+		c_d_p1.anadirPregunta(nuevaPreg);
 		nuevaPreg = new Pregunta("¿Va a ser difícil el año que viene?", "NO");
-		cDP1.anadirPregunta(nuevaPreg);
+		c_d_p1.anadirPregunta(nuevaPreg);
 		nuevaPreg = new Pregunta("¿Vamos a por todas?", "SI");
-		cDP1.anadirPregunta(nuevaPreg);
+		c_d_p1.anadirPregunta(nuevaPreg);
+		
+		ConjuntoDePreguntas c_d_p2 = new ConjuntoDePreguntas();
+		nuevaPreg = new Pregunta("¿Hay ganas de empezar el año?", "SI");
+		c_d_p2.anadirPregunta(nuevaPreg);
+		nuevaPreg = new Pregunta("¿Estás seguro?", "SI");
+		c_d_p2.anadirPregunta(nuevaPreg);
+		
+		ConjuntoDePreguntas c_d_p3 = new ConjuntoDePreguntas();
+		nuevaPreg = new Pregunta("¿Hace calor?", "SI");
+		c_d_p3.anadirPregunta(nuevaPreg);
 /*
 		while (esCorrecta) {
 
