@@ -6,4 +6,9 @@ public class BaseDeDatosDePreguntas {
 	BaseDeDatosDePreguntas(ConjuntoDePreguntas cDP[]){
 		this.conjuntoDP = cDP;
 	}
+	
+	public void crearBaseDeDatosDePreguntas() {
+		
+	}
+	
 }
