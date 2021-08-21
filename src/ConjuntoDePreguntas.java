@@ -4,7 +4,6 @@
 	Clase que nos sirve para crear listas de preguntas junto a sus métodos para que pueda leerse el solo con scanner,
 	añadir preguntas, comprobar que el array tiene espacio, etc.
 */
-
 import java.util.Scanner;
 import MisExcepciones.ArrayEstaLlenoException;
 
@@ -27,6 +26,7 @@ public class ConjuntoDePreguntas {
 		// como en el bloque else del if casi he copiado el bloque de abajo comentado
 		boolean continuar = true;
 		int indice = 0;
+		
 		@SuppressWarnings("resource")
 		Scanner leer_linea = new Scanner(System.in);
 		
