@@ -11,7 +11,7 @@ public class Reto1_Scanner {
 			//Reto1_Scanner.p1();
 			//Reto1_Scanner.imprimirRandom();
 			Reto1_Scanner.p2();
-		
+			//Reto1_Scanner.p3();
 	}
 	
 	public static void p1 () {
@@ -49,8 +49,13 @@ public class Reto1_Scanner {
 		
 		c_d_p1.preguntar();
 		
-		c_d_p1.eliminarPreg(2);
+		c_d_p1.eliminarPreg(1);
 		c_d_p1.preguntar();
+	}
+	
+	public static void p3 () {
+		//Vamos a llamar al número máximo de preguntas
+		System.out.println(ConjuntoDePreguntas.getMaxPreguntas());
 	}
 	
 	public static void imprimirRandom ( ) {

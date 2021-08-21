@@ -66,29 +66,26 @@ public class ConjuntoDePreguntas {
 	
 	public void eliminarPreg(int numero_preg){
 		boolean continuar = true;
-		int indice = numero_preg - 1;
-		do {
-			if(indice < ConjuntoDePreguntas.MAX_PREGUNTAS) {
-				if(this.lista_de_preg[indice] == null) {
-					continuar = false;
-				}else {
-					this.lista_de_preg[indice] = this.lista_de_preg[indice + 1];
-				}
-			}else {
-				continuar = false;
+		int indice = numero_preg;
+		int ultimo_valor_cambiado = 0;
+		
+			if((indice > 0) && (indice < ConjuntoDePreguntas.MAX_PREGUNTAS)) {
+				do {	
+					if((this.lista_de_preg[indice] == null) || (indice >= ConjuntoDePreguntas.MAX_PREGUNTAS - 1)) {
+						continuar = false;
+					}else {
+						this.lista_de_preg[indice] = this.lista_de_preg[indice + 1];
+						ultimo_valor_cambiado = indice;
+					}
+					this.lista_de_preg[ultimo_valor_cambiado + 1] = null;
+					indice++;
+				} while(continuar);
 			}
-		} while(continuar);
-		
-		
-/*		for(int i = numero_preg + 1; i < MAX_PREGUNTAS; i++) {
-			if(this.lista_de_preg[i] == null) {
-				break;
-			}else {
-				this.lista_de_preg[i] = this.lista_de_preg[i+1];
-			}	
-		}
-*/		
 	}
+	
+	public static int getMaxPreguntas() {
+		return ConjuntoDePreguntas.MAX_PREGUNTAS;
+	}	
 	
 	public void anadirPregunta(Pregunta nuevaPreg) {
 		if(this.posicion_de_nueva_pregunta_a_insertar == MAX_PREGUNTAS) {
