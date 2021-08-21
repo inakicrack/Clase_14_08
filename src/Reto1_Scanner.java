@@ -8,7 +8,7 @@ import java.util.Random;
 public class Reto1_Scanner {
 
 	public static void main(String[] args) {	
-			Reto1_Scanner.p1();
+			//Reto1_Scanner.p1();
 			Reto1_Scanner.imprimir_random();
 		
 	}
