@@ -9,7 +9,8 @@ public class Reto1_Scanner {
 
 	public static void main(String[] args) {	
 			//Reto1_Scanner.p1();
-			Reto1_Scanner.imprimirRandom();
+			//Reto1_Scanner.imprimirRandom();
+			Reto1_Scanner.p2();
 		
 	}
 	
@@ -34,7 +35,22 @@ public class Reto1_Scanner {
 
 		c_d_p1.preguntar();
 		c_d_p2.preguntar();
-		c_d_p3.preguntar();		
+		c_d_p3.preguntar();
+	}
+	
+	public static void p2 () {
+		ConjuntoDePreguntas c_d_p1 = new ConjuntoDePreguntas();
+		Pregunta nuevaPreg = new Pregunta("¿Voy a aprobar el año que viene?", "SI");
+		c_d_p1.anadirPregunta(nuevaPreg);
+		nuevaPreg = new Pregunta("¿Va a ser difícil el año que viene?", "NO");
+		c_d_p1.anadirPregunta(nuevaPreg);
+		nuevaPreg = new Pregunta("¿Vamos a por todas?", "SI");
+		c_d_p1.anadirPregunta(nuevaPreg);
+		
+		c_d_p1.preguntar();
+		
+		c_d_p1.eliminarPreg(2);
+		c_d_p1.preguntar();
 	}
 	
 	public static void imprimirRandom ( ) {

@@ -64,6 +64,32 @@ public class ConjuntoDePreguntas {
 		//leer_linea.close();
 	}
 	
+	public void eliminarPreg(int numero_preg){
+		boolean continuar = true;
+		int indice = numero_preg - 1;
+		do {
+			if(indice < ConjuntoDePreguntas.MAX_PREGUNTAS) {
+				if(this.lista_de_preg[indice] == null) {
+					continuar = false;
+				}else {
+					this.lista_de_preg[indice] = this.lista_de_preg[indice + 1];
+				}
+			}else {
+				continuar = false;
+			}
+		} while(continuar);
+		
+		
+/*		for(int i = numero_preg + 1; i < MAX_PREGUNTAS; i++) {
+			if(this.lista_de_preg[i] == null) {
+				break;
+			}else {
+				this.lista_de_preg[i] = this.lista_de_preg[i+1];
+			}	
+		}
+*/		
+	}
+	
 	public void anadirPregunta(Pregunta nuevaPreg) {
 		if(this.posicion_de_nueva_pregunta_a_insertar == MAX_PREGUNTAS) {
 			throw new ArrayEstaLlenoException("El array está lleno");
