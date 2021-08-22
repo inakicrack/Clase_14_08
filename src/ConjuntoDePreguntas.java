@@ -69,18 +69,18 @@ public class ConjuntoDePreguntas {
 		int indice = numero_preg;
 		int ultimo_valor_cambiado = 0;
 		
-			if((indice > 0) && (indice < ConjuntoDePreguntas.MAX_PREGUNTAS)) {
-				do {	
-					if((this.lista_de_preg[indice] == null) || (indice >= ConjuntoDePreguntas.MAX_PREGUNTAS - 1)) {
-						continuar = false;
-					}else {
-						this.lista_de_preg[indice] = this.lista_de_preg[indice + 1];
-						ultimo_valor_cambiado = indice;
-					}
-					this.lista_de_preg[ultimo_valor_cambiado + 1] = null;
-					indice++;
-				} while(continuar);
-			}
+		if((indice > 0) && (indice < ConjuntoDePreguntas.MAX_PREGUNTAS)) {
+			do {	
+				if((this.lista_de_preg[indice] == null) || (indice >= ConjuntoDePreguntas.MAX_PREGUNTAS - 1)) {
+					continuar = false;
+				}else {
+					this.lista_de_preg[indice] = this.lista_de_preg[indice + 1];
+					ultimo_valor_cambiado = indice;
+				}
+				this.lista_de_preg[ultimo_valor_cambiado + 1] = null;
+				indice++;
+			} while(continuar);
+		}
 	}
 	
 	public static int getMaxPreguntas() {

@@ -58,6 +58,32 @@ public class Reto1_Scanner {
 		System.out.println(ConjuntoDePreguntas.getMaxPreguntas());
 	}
 	
+	public static void p4 () {
+		BaseDeDatosDePreguntas base_1 = new BaseDeDatosDePreguntas();
+		
+		ConjuntoDePreguntas c_d_p1 = new ConjuntoDePreguntas();
+		Pregunta nuevaPreg = new Pregunta("¿Voy a aprobar el año que viene?", "SI");
+		c_d_p1.anadirPregunta(nuevaPreg);
+		nuevaPreg = new Pregunta("¿Va a ser difícil el año que viene?", "NO");
+		c_d_p1.anadirPregunta(nuevaPreg);
+		nuevaPreg = new Pregunta("¿Vamos a por todas?", "SI");
+		c_d_p1.anadirPregunta(nuevaPreg);
+		
+		ConjuntoDePreguntas c_d_p2 = new ConjuntoDePreguntas();
+		nuevaPreg = new Pregunta("¿Hay ganas de empezar el año?", "SI");
+		c_d_p2.anadirPregunta(nuevaPreg);
+		nuevaPreg = new Pregunta("¿Estás seguro?", "SI");
+		c_d_p2.anadirPregunta(nuevaPreg);
+		
+		ConjuntoDePreguntas c_d_p3 = new ConjuntoDePreguntas();
+		nuevaPreg = new Pregunta("¿Hace calor?", "SI");
+		c_d_p3.anadirPregunta(nuevaPreg);
+		
+		base_1.anadirLista(c_d_p1);
+		base_1.anadirLista(c_d_p2);
+		base_1.anadirLista(c_d_p3);
+	}
+	
 	public static void imprimirRandom ( ) {
 		Random aleatorio = new Random();
 		for (int i= 0 ; i < 10; i++) {
