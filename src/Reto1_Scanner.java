@@ -10,8 +10,9 @@ public class Reto1_Scanner {
 	public static void main(String[] args) {	
 			//Reto1_Scanner.p1();
 			//Reto1_Scanner.imprimirRandom();
-			Reto1_Scanner.p2();
+			//Reto1_Scanner.p2();
 			//Reto1_Scanner.p3();
+			Reto1_Scanner.p4();
 	}
 	
 	public static void p1 () {
@@ -82,15 +83,16 @@ public class Reto1_Scanner {
 		base_1.anadirLista(c_d_p1);
 		base_1.anadirLista(c_d_p2);
 		base_1.anadirLista(c_d_p3);
+		
+		base_1.preguntarLista();
 	}
 	
 	public static void imprimirRandom ( ) {
 		Random aleatorio = new Random();
 		for (int i= 0 ; i < 10; i++) {
 			int resultado;
-			resultado = aleatorio.nextInt(10);
+			resultado = aleatorio.nextInt(20);
 			System.out.println(resultado);
-		}
-		
+		}		
 	}
 }
