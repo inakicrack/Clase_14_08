@@ -43,7 +43,7 @@ public class ConjuntoDePreguntas {
 					try {
 						r_usuario = leer_linea.nextLine();
 					} catch (Exception e) {
-						System.out.println("HA PETADO EL SCANNER;  aver si nos dejas seguir...");
+						System.out.println("HA PETADO EL SCANNER;  a ver si nos dejas seguir...");
 						System.out.println(e.getMessage());
 					}
 					

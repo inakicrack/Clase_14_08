@@ -4,11 +4,19 @@
 
 public class Pregunta {
 
-	public final String pregunta;
-	public final String respuesta_correcta;
+	private final String pregunta;
+	private final String respuesta_correcta;
 	
 	Pregunta(String preg, String res){
 		this.pregunta = preg;
 		this.respuesta_correcta = res;
+	}
+	
+	public String getPregunta() {
+		return pregunta;
+	}
+
+	public String getRespuestaCorrecta() {
+		return respuesta_correcta;
 	}
 }

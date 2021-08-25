@@ -35,12 +35,12 @@ public class BaseDeDatosDePreguntas {
 		Random aleatorio = new Random();
 		int resultado = 0;
 		
-		for (int i= 0 ; i < 1; i++) {			
+		for (int i = 0 ; i < 1; i++) {	
 			resultado = aleatorio.nextInt(BaseDeDatosDePreguntas.MAX_CONJUNTOS);
 		}
 		
 		if(this.lista_de_conj[resultado] == null) {
-			throw new NoSeEncuentraConjunto("No se encuentra lista de preguntas en esa posición del Array");
+			throw new NoSeEncuentraConjunto("No se encuentra una lista de preguntas en esa posición del Array");
 		}else {
 			this.lista_de_conj[resultado].preguntar();
 		}

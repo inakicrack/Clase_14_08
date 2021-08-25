@@ -12,7 +12,7 @@ public class Reto1_Scanner {
 			//Reto1_Scanner.imprimirRandom();
 			//Reto1_Scanner.p2();
 			//Reto1_Scanner.p3();
-			Reto1_Scanner.p4();
+			//Reto1_Scanner.p4();
 	}
 	
 	public static void p1 () {
