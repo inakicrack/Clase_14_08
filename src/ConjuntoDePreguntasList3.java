@@ -8,12 +8,11 @@ public class ConjuntoDePreguntasList3 extends LinkedList<Pregunta>{
 	 */
 	private static final long serialVersionUID = 1L;	
 	
-	public Proporcion preguntar() {
+	public void preguntar(Proporcion prop) {
 		@SuppressWarnings("resource") //Porque estamos leyendo de teclado y no lo vamos a cerrar
 		Scanner leer_linea = new Scanner(System.in);
 		int respuestas_acertadas = 0;
 		int preguntas_totales = 0;
-		Proporcion prop = new Proporcion();
 		
 		for(Pregunta preg: this) {
 			System.out.println(preg.getPregunta());
@@ -40,7 +39,7 @@ public class ConjuntoDePreguntasList3 extends LinkedList<Pregunta>{
 		//Aquí iría el cierre de Scanner pero como estamos leyendo de teclado no lo hacemos
 		//prop.setPreguntasTotales(preguntas_totales);
 		//prop.setRespuestasAcertadas(respuestas_acertadas);
-		prop = new Proporcion(preguntas_totales, respuestas_acertadas);
-		return prop;
+		prop.setPreguntasTotales(prop.getPreguntasTotales() + preguntas_totales);
+		prop.setRespuestasAcertadas(prop.getRespuestaAcertadas() + respuestas_acertadas);
 	}
 }

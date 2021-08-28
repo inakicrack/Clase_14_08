@@ -2,16 +2,16 @@
 public class Reto1_Scanner_List {
 
 	public static void main(String[] args) {
-		//Reto1_Scanner_List.ejemplo_01();
-		Reto1_Scanner_List.paso_referencia();
+		Reto1_Scanner_List.ejemplo_01();
+		//Reto1_Scanner_List.paso_referencia();
 		
 	}
 	
 	public static void ejemplo_01 () {
-		BaseDeDatosDePreguntasList2 base_1 = new BaseDeDatosDePreguntasList2();
-		ConjuntoDePreguntasList2 conj_1 = new ConjuntoDePreguntasList2();
-		ConjuntoDePreguntasList2 conj_2 = new ConjuntoDePreguntasList2();
-		ConjuntoDePreguntasList2 conj_3 = new ConjuntoDePreguntasList2();
+		BaseDeDatosDePreguntasList3 base_1 = new BaseDeDatosDePreguntasList3();
+		ConjuntoDePreguntasList3 conj_1 = new ConjuntoDePreguntasList3();
+		ConjuntoDePreguntasList3 conj_2 = new ConjuntoDePreguntasList3();
+		ConjuntoDePreguntasList3 conj_3 = new ConjuntoDePreguntasList3();
 		Pregunta nuevaPreg = new Pregunta("¿Voy a aprobar el año que viene?", "SI");
 		conj_1.add(nuevaPreg);
 		nuevaPreg = new Pregunta("¿Va a ser difícil el año que viene?", "NO");
