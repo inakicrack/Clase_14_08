@@ -12,19 +12,19 @@ public class Reto1_Scanner_List {
 		ConjuntoDePreguntasList3 conj_1 = new ConjuntoDePreguntasList3();
 		ConjuntoDePreguntasList3 conj_2 = new ConjuntoDePreguntasList3();
 		ConjuntoDePreguntasList3 conj_3 = new ConjuntoDePreguntasList3();
-		Pregunta nuevaPreg = new Pregunta("¿Voy a aprobar el año que viene?", "SI");
+		Pregunta nuevaPreg = new Pregunta("ï¿½Voy a aprobar el aï¿½o que viene?", "SI");
 		conj_1.add(nuevaPreg);
-		nuevaPreg = new Pregunta("¿Va a ser difícil el año que viene?", "NO");
+		nuevaPreg = new Pregunta("ï¿½Va a ser difï¿½cil el aï¿½o que viene?", "NO");
 		conj_1.add(nuevaPreg);
-		nuevaPreg = new Pregunta("¿Vamos a por todas?", "SI");
+		nuevaPreg = new Pregunta("ï¿½Vamos a por todas?", "SI");
 		conj_1.add(nuevaPreg);
 
-		nuevaPreg = new Pregunta("¿Hay ganas de empezar el año?", "SI");
+		nuevaPreg = new Pregunta("ï¿½Hay ganas de empezar el aï¿½o?", "SI");
 		conj_2.add(nuevaPreg);
-		nuevaPreg = new Pregunta("¿Estás seguro?", "SI");
+		nuevaPreg = new Pregunta("ï¿½Estï¿½s seguro?", "SI");
 		conj_2.add(nuevaPreg);
 		
-		nuevaPreg = new Pregunta("¿Hace calor?", "SI");
+		nuevaPreg = new Pregunta("ï¿½Hace calor?", "SI");
 		conj_3.add(nuevaPreg);
 		
 		base_1.add(conj_1);
@@ -46,32 +46,26 @@ public class Reto1_Scanner_List {
 		prop.setPreguntasTotales(10);
 	}
 	
+	public static void leerArray(String[] array) {
+		String cadena = "";
+		for(int i = 0; i < array.length; i++) {
+			cadena = cadena + " " + array[i];
+		}
+		cadena = cadena + "\n";
+		System.out.println(cadena);
+	}
+	
 	public static void queEsEsto() {
 		String[] nombre = {"María", "López", "Obrador"};
-		String cadena = "";
-		String valor1 = nombre[1];
-		String valor2 = nombre[2];
+		String aux = "";
+
+		leerArray(nombre);
 		
-		System.out.println("En el array nombre[1] es: " + nombre[1]);
-		System.out.println("En la variable valor1 es: " + valor1);
-		System.out.println("Ahora voy a hacer cambios en valor1:");
-		valor1 = "caca de la vaca";
-		System.out.println("En el array nombre[1] es: " + nombre[1]);
-		System.out.println("En la variable valor1 es: " + valor1);
+		aux = nombre[1];
+		nombre[1] = nombre[2];
+		nombre[2] = aux;
 		
-		
-		for(int i = 0; i < nombre.length; i++) {
-			cadena = cadena + " " + nombre[i];
-		}
-		
-		nombre[1] = valor2;
-		nombre[2] = valor1;
-		cadena = cadena + "\n";
-		
-		for(int i = 0; i < nombre.length; i++) {
-			cadena = cadena + " " + nombre[i];
-		}
-		System.out.println(cadena);
+		leerArray(nombre);
 	}
 }
 
