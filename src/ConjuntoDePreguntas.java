@@ -37,7 +37,7 @@ public class ConjuntoDePreguntas {
 				}else {
 					Pregunta preg = this.lista_de_preg[indice]; //Cambie "i" por "indice"
 	
-					System.out.println(preg.pregunta);
+					System.out.println(preg.getPregunta());
 					
 					String r_usuario = "";
 					try {
@@ -48,7 +48,7 @@ public class ConjuntoDePreguntas {
 					}
 					
 					r_usuario = r_usuario.trim().toUpperCase();
-					String r_correcta = preg.respuesta_correcta.toUpperCase();
+					String r_correcta = preg.getRespuestaCorrecta().toUpperCase();
 					
 					if (r_correcta.equals(r_usuario)) {
 						System.out.println("\nYes, playa!\n");
