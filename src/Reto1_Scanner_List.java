@@ -2,6 +2,12 @@
 public class Reto1_Scanner_List {
 
 	public static void main(String[] args) {
+		//Reto1_Scanner_List.ejemplo_01();
+		Reto1_Scanner_List.paso_referencia();
+		
+	}
+	
+	public static void ejemplo_01 () {
 		BaseDeDatosDePreguntasList2 base_1 = new BaseDeDatosDePreguntasList2();
 		ConjuntoDePreguntasList2 conj_1 = new ConjuntoDePreguntasList2();
 		ConjuntoDePreguntasList2 conj_2 = new ConjuntoDePreguntasList2();
@@ -27,4 +33,17 @@ public class Reto1_Scanner_List {
 		
 		base_1.preguntarLista();
 	}
+	
+	public static void paso_referencia () {
+		ProporcionDeAciertos prop1 = new ProporcionDeAciertos(0,0);
+		ProporcionDeAciertos prop_clone = prop1.clone();
+		Reto1_Scanner_List.auxiliar_01(prop_clone);
+		System.out.println(prop1);
+	}
+	
+	public static void auxiliar_01 (ProporcionDeAciertos prop) {
+		prop.setRespuestasAcertadas(3);
+		prop.setPreguntasTotales(10);
+	}
 }
+

@@ -41,6 +41,13 @@ public class ProporcionDeAciertos {
 		this.setPreguntasTotales(this.getPreguntasTotales() + prop.getPreguntasTotales());
 		this.setRespuestasAcertadas(this.getRespuestaAcertadas() + prop.getRespuestaAcertadas());
 	}
+	
+	public ProporcionDeAciertos clone () {
+		
+		ProporcionDeAciertos nuevo = new ProporcionDeAciertos (this.getPreguntasTotales(), this.getRespuestaAcertadas());
+		return nuevo;
+		
+	}
 
 }
 
