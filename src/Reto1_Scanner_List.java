@@ -35,13 +35,13 @@ public class Reto1_Scanner_List {
 	}
 	
 	public static void paso_referencia () {
-		ProporcionDeAciertos prop1 = new ProporcionDeAciertos(0,0);
-		ProporcionDeAciertos prop_clone = prop1.clone();
+		Proporcion prop1 = new Proporcion(0,0);
+		Proporcion prop_clone = prop1.clone();
 		Reto1_Scanner_List.auxiliar_01(prop_clone);
 		System.out.println(prop1);
 	}
 	
-	public static void auxiliar_01 (ProporcionDeAciertos prop) {
+	public static void auxiliar_01 (Proporcion prop) {
 		prop.setRespuestasAcertadas(3);
 		prop.setPreguntasTotales(10);
 	}

@@ -1,14 +1,14 @@
 
-public class ProporcionDeAciertos {
+public class Proporcion {
 	private int pregunta_totales;
 	private int respuesta_acertadas;
 	
-	ProporcionDeAciertos(int preg, int res){
+	Proporcion(int preg, int res){
 		this.pregunta_totales = preg;
 		this.respuesta_acertadas = res;
 	}
 	
-	ProporcionDeAciertos(){
+	Proporcion(){
 		this.pregunta_totales = 0;
 		this.respuesta_acertadas = 0;
 	}
@@ -37,14 +37,14 @@ public class ProporcionDeAciertos {
 		return this.getProporcion();
 	}
 	
-	public void sumar(ProporcionDeAciertos prop) {
+	public void sumar(Proporcion prop) {
 		this.setPreguntasTotales(this.getPreguntasTotales() + prop.getPreguntasTotales());
 		this.setRespuestasAcertadas(this.getRespuestaAcertadas() + prop.getRespuestaAcertadas());
 	}
 	
-	public ProporcionDeAciertos clone () {
+	public Proporcion clone () {
 		
-		ProporcionDeAciertos nuevo = new ProporcionDeAciertos (this.getPreguntasTotales(), this.getRespuestaAcertadas());
+		Proporcion nuevo = new Proporcion (this.getPreguntasTotales(), this.getRespuestaAcertadas());
 		return nuevo;
 		
 	}
