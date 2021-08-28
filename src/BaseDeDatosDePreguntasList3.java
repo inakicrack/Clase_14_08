@@ -34,6 +34,9 @@ public class BaseDeDatosDePreguntasList3 extends LinkedList<ConjuntoDePreguntasL
 				System.out.println("¿Que coño has hecho?");
 				break;
 		}
+	}
+	
+	public void saludoFinal2(Proporcion prop) {
 		
 	}
 }

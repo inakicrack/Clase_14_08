@@ -2,9 +2,9 @@
 public class Reto1_Scanner_List {
 
 	public static void main(String[] args) {
-		Reto1_Scanner_List.ejemplo_01();
+		//Reto1_Scanner_List.ejemplo_01();
 		//Reto1_Scanner_List.paso_referencia();
-		
+		Reto1_Scanner_List.queEsEsto();
 	}
 	
 	public static void ejemplo_01 () {
@@ -44,6 +44,26 @@ public class Reto1_Scanner_List {
 	public static void auxiliar_01 (Proporcion prop) {
 		prop.setRespuestasAcertadas(3);
 		prop.setPreguntasTotales(10);
+	}
+	
+	public static void queEsEsto() {
+		String[] nombre = {"María", "López", "Obrador"};
+		String cadena = "";
+		String valor1 = nombre[1];
+		String valor2 = nombre[2];
+		
+		for(int i = 0; i < nombre.length; i++) {
+			cadena = cadena + " " + nombre[i];
+		}
+		
+		nombre[1] = valor2;
+		nombre[2] = valor1;
+		cadena = cadena + "\n";
+		
+		for(int i = 0; i < nombre.length; i++) {
+			cadena = cadena + " " + nombre[i];
+		}
+		System.out.println(cadena);
 	}
 }
 
