@@ -52,6 +52,14 @@ public class Reto1_Scanner_List {
 		String valor1 = nombre[1];
 		String valor2 = nombre[2];
 		
+		System.out.println("En el array nombre[1] es: " + nombre[1]);
+		System.out.println("En la variable valor1 es: " + valor1);
+		System.out.println("Ahora voy a hacer cambios en valor1:");
+		valor1 = "caca de la vaca";
+		System.out.println("En el array nombre[1] es: " + nombre[1]);
+		System.out.println("En la variable valor1 es: " + valor1);
+		
+		
 		for(int i = 0; i < nombre.length; i++) {
 			cadena = cadena + " " + nombre[i];
 		}
