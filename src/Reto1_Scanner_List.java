@@ -2,9 +2,9 @@
 public class Reto1_Scanner_List {
 
 	public static void main(String[] args) {
-		//Reto1_Scanner_List.ejemplo_01();
+		Reto1_Scanner_List.ejemplo_01();
 		//Reto1_Scanner_List.paso_referencia();
-		Reto1_Scanner_List.queEsEsto();
+		//Reto1_Scanner_List.queEsEsto();
 	}
 	
 	public static void ejemplo_01 () {
@@ -12,19 +12,19 @@ public class Reto1_Scanner_List {
 		ConjuntoDePreguntasList3 conj_1 = new ConjuntoDePreguntasList3();
 		ConjuntoDePreguntasList3 conj_2 = new ConjuntoDePreguntasList3();
 		ConjuntoDePreguntasList3 conj_3 = new ConjuntoDePreguntasList3();
-		Pregunta nuevaPreg = new Pregunta("ï¿½Voy a aprobar el aï¿½o que viene?", "SI");
+		Pregunta nuevaPreg = new Pregunta("¿Voy a aprobar el año que viene?", "SI");
 		conj_1.add(nuevaPreg);
-		nuevaPreg = new Pregunta("ï¿½Va a ser difï¿½cil el aï¿½o que viene?", "NO");
+		nuevaPreg = new Pregunta("¿Va a ser difícil el año que viene?", "NO");
 		conj_1.add(nuevaPreg);
-		nuevaPreg = new Pregunta("ï¿½Vamos a por todas?", "SI");
+		nuevaPreg = new Pregunta("¿Vamos a por todas?", "SI");
 		conj_1.add(nuevaPreg);
 
-		nuevaPreg = new Pregunta("ï¿½Hay ganas de empezar el aï¿½o?", "SI");
+		nuevaPreg = new Pregunta("¿Hay ganas de empezar el año?", "SI");
 		conj_2.add(nuevaPreg);
-		nuevaPreg = new Pregunta("ï¿½Estï¿½s seguro?", "SI");
+		nuevaPreg = new Pregunta("¿Estás seguro?", "SI");
 		conj_2.add(nuevaPreg);
 		
-		nuevaPreg = new Pregunta("ï¿½Hace calor?", "SI");
+		nuevaPreg = new Pregunta("¿Hace calor?", "SI");
 		conj_3.add(nuevaPreg);
 		
 		base_1.add(conj_1);
