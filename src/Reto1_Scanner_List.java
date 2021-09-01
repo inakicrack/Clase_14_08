@@ -2,9 +2,10 @@
 public class Reto1_Scanner_List {
 
 	public static void main(String[] args) {
-		Reto1_Scanner_List.ejemplo_01();
+		//Reto1_Scanner_List.ejemplo_01();
 		//Reto1_Scanner_List.paso_referencia();
 		//Reto1_Scanner_List.queEsEsto();
+		Reto1_Scanner_List.lecturaDeFichero();
 	}
 	
 	public static void ejemplo_01 () {
@@ -66,6 +67,22 @@ public class Reto1_Scanner_List {
 		nombre[2] = aux;
 		
 		leerArray(nombre);
+	}
+	
+	public static void lecturaDeFichero() {
+		ConjuntoDePreguntasList3 cdp = new ConjuntoDePreguntasList3();
+		ConjuntoDePreguntasList3 cdp2 = new ConjuntoDePreguntasList3();
+		
+		LectorDePreguntas lector_1 = new LectorDePreguntas(cdp, "Ejemplo_001.dbp");
+		lector_1.leer();
+		LectorDePreguntas lector_2 = new LectorDePreguntas(cdp2, "Ejemplo_002.dbp");
+		lector_2.leer();
+		
+		BaseDeDatosDePreguntasList3 bdp = new BaseDeDatosDePreguntasList3();
+		bdp.add(cdp);
+		bdp.add(cdp2);
+		
+		bdp.preguntarLista();
 	}
 }
 
