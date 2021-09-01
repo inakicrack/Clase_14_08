@@ -17,7 +17,7 @@ public class LectorDePreguntas {
 	boolean primera_pregunta_leida = false;
 	
 	
-	public LectorDePreguntas() {
+	public void LectorDePreguntas2() {
 
 		String linea = "";
 		ConjuntoDePreguntasList3 lista = new ConjuntoDePreguntasList3();
@@ -51,13 +51,8 @@ public class LectorDePreguntas {
 	private boolean leer_primera_linea_pregunta () {
 		//Leyendo la primera linea de la pregunta:
 		String linea_aux= "";
-		try {
-			linea_aux = buffer.readLine();
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-			System.exit(0);
-		}
+		linea_aux = this.leer_linea();
+
 		if (linea_aux == null) {
 			
 			if (this.primera_pregunta_leida == false) {
@@ -71,7 +66,26 @@ public class LectorDePreguntas {
 	
 	private String leer_pregunta_2da_linea() {
 		
+		String texto_pregunta = "";
 		
+		
+		
+		return texto_pregunta;
+		
+		
+	}
+	
+	private String leer_linea () {
+		String linea_aux= "";
+		try {
+			linea_aux = buffer.readLine();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			System.exit(0);
+		}
+		
+		return linea_aux;
 	}
 
 	
