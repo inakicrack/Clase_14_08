@@ -4,22 +4,32 @@ import MisExcepciones.FormatoDeFicheroIncorrecto;
 
 public class LectorDePreguntas {
 	
-	Pregunta nuevaPreg; 
-	String primeraLinea;
-	FileReader fichero;
-	
-	do {
-		
-	} while(continuar);
-	
-		fichero = new FileReader("inicial.txt");
-		BufferedReader buffer = new BufferedReader(fichero);
-		primeraLinea = buffer.readLine();
-		if(primeraLinea == null) {
+	public LectorDePreguntas() {
+		Pregunta nuevaPreg; 
+		String linea;
+		FileReader fichero;
+		boolean continuar = true;
+		try {	
+			fichero = new FileReader("Ejemplo_001");
+			BufferedReader buffer = new BufferedReader(fichero);
+			linea = buffer.readLine();
+			if(linea == null) {
+				buffer.close();
+				throw new FormatoDeFicheroIncorrecto("El fichero está vacío");
+			}else {
+				do {
+					if(linea == "<P>" || linea == "<R>") {
+						
+					}
+				}while(continuar);
+			}
 			buffer.close();
-			throw new FormatoDeFicheroIncorrecto("El fichero está vacío");
-		}else {
-			pregunta = ;
+
+			} catch (Exception e) {
+				e.printStackTrace();
+				System.exit(0);
 		}
-		buffer.close();
+	}
+
+	
 }
